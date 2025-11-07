@@ -395,7 +395,7 @@ class SCRQuizApp {
     id: 66,
     question: "Which is the first city in our country free of manual scavenging?",
     options: ["Alwar", "Bharuch", "Trichy", "Jaipur"],
-    correct: 1
+    correct: 0
   },
   {
     id: 67,
