@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constitution of India Quiz</title>
+    <title>SCR Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,13 @@
     <div id="welcomeScreen" class="screen active">
         <div class="container">
             <div class="welcome-content">
-                <h1 class="welcome-title">Constitution of India Quiz</h1>
-                <p class="welcome-subtitle">Comprehensive Assessment from 100 Questions Database</p>
+                <h1 class="welcome-title">Social Connect & Responsibility Quiz</h1>
+                <p class="welcome-subtitle">Comprehensive Assessment from 102 Questions Database</p>
                 
                 <div class="info-cards">
                     <div class="info-card">
                         <div class="info-icon">📘</div>
-                        <div class="info-text">100 COI Questions</div>
+                        <div class="info-text">102 SCR Questions</div>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">🎲</div>
@@ -39,15 +39,14 @@
                 </div>
 
                 <button id="startQuizBtn" class="btn btn--primary btn--lg btn--full-width">
-                    Begin COI Assessment
+                    Begin SCR Assessment
                 </button>
 
                 <div class="footer-credit">
-                Built with ❤️ by <span class="highlight">Samridh Shetty</span>
+                    Built with ❤️ by <span class="highlight">Samridh Shetty</span>
                 </div>
-                <button id="adminLoginBtn" class="admin-link">Admin Dashboard</button>
-                
 
+                <button id="adminLoginBtn" class="admin-link">Admin Dashboard</button>
             </div>
         </div>
     </div>
@@ -82,7 +81,7 @@
             <div class="quiz-navigation">
                 <button id="prevBtn" class="btn btn--outline">← Previous</button>
                 <button id="nextBtn" class="btn btn--primary">Next →</button>
-                <button id="submitBtn" class="btn btn--primary submit-btn hidden">🇮🇳 Submit Assessment</button>
+                <button id="submitBtn" class="btn btn--primary submit-btn hidden">Submit Quiz</button>
             </div>
         </div>
     </div>
@@ -91,7 +90,7 @@
     <div id="resultsScreen" class="screen">
         <div class="container">
             <div class="results-content">
-                <h2 class="results-title">🎯 Assessment Complete</h2>
+                <h2 class="results-title">Assessment Complete</h2>
                 <div class="student-name-display" id="studentNameDisplay"></div>
                 
                 <div class="score-circle">
@@ -120,16 +119,12 @@
                 </div>
 
                 <div class="time-taken">
-                    <span>⏱️ Time Taken: <span id="timeTaken">0:00</span></span>
-                </div>
-
-                <div class="congratulations-message">
-                    <p>🌟 Well done on your Constitution of India assessment! Keep learning and developing constitutional awareness.</p>
+                    <span>Time Taken: <span id="timeTaken">0:00</span></span>
                 </div>
 
                 <div class="results-actions">
-                    <button id="reviewAnswersBtn" class="btn btn--primary">📋 Review Answers</button>
-                    <button id="newQuizBtn" class="btn btn--outline">🎲 New Random Quiz</button>
+                    <button id="reviewAnswersBtn" class="btn btn--primary">Review Answers</button>
+                    <button id="newQuizBtn" class="btn btn--outline">New Random Quiz</button>
                 </div>
             </div>
         </div>
@@ -139,18 +134,18 @@
     <div id="reviewScreen" class="screen">
         <div class="container">
             <div class="review-header">
-                <h2>📋 COI Answer Review</h2>
+                <h2>SCR Answer Review</h2>
                 <div class="review-summary">
-                    <span class="summary-correct">✅ Correct: <span id="reviewCorrectCount">0</span></span>
-                    <span class="summary-wrong">❌ Wrong: <span id="reviewWrongCount">0</span></span>
-                    <span class="summary-unanswered">❓ Unanswered: <span id="reviewUnansweredCount">0</span></span>
+                    <span>✅ <span id="reviewCorrectCount">0</span></span>
+                    <span>❌ <span id="reviewWrongCount">0</span></span>
+                    <span>❓ <span id="reviewUnansweredCount">0</span></span>
                 </div>
             </div>
 
             <div id="reviewQuestions" class="review-questions"></div>
 
             <div class="review-actions">
-                <button id="backToResultsBtn" class="btn btn--primary">← Back to Results</button>
+                <button id="backToResultsBtn" class="btn btn--primary">← Back</button>
             </div>
         </div>
     </div>
@@ -159,39 +154,11 @@
     <div id="adminScreen" class="screen">
         <div class="container">
             <div class="admin-header">
-                <h2>👑 COI Admin Dashboard</h2>
+                <h2>SCR Admin Dashboard</h2>
                 <button id="logoutBtn" class="btn btn--outline">Logout</button>
             </div>
 
-            <div class="admin-stats">
-                <div class="admin-stat-card">
-                    <div class="admin-stat-icon">👥</div>
-                    <div class="admin-stat-value" id="totalStudents">0</div>
-                    <div class="admin-stat-label">Total Students</div>
-                </div>
-                <div class="admin-stat-card">
-                    <div class="admin-stat-icon">📊</div>
-                    <div class="admin-stat-value" id="averageScore">0%</div>
-                    <div class="admin-stat-label">Average Score</div>
-                </div>
-                <div class="admin-stat-card">
-                    <div class="admin-stat-icon">📚</div>
-                    <div class="admin-stat-value">100</div>
-                    <div class="admin-stat-label">Question Bank</div>
-                </div>
-                <div class="admin-stat-card">
-                    <div class="admin-stat-icon">✅</div>
-                    <div class="admin-stat-value" id="completionRate">0%</div>
-                    <div class="admin-stat-label">Completion Rate</div>
-                </div>
-            </div>
-
             <div class="admin-table-container">
-                <div class="admin-table-header">
-                    <h3>Student Performance</h3>
-                    <button id="exportBtn" class="btn btn--outline">Export CSV</button>
-                </div>
-
                 <table class="admin-table">
                     <thead>
                         <tr>
@@ -207,24 +174,25 @@
             </div>
         </div>
     </div>
+
     <!-- Admin Login Modal -->
     <div id="adminModal" class="modal">
-    <div class="modal-content">
-    <h2>Admin Login</h2>
-
-    <label>Username</label>
-    <input type="text" id="adminUsername" placeholder="Enter admin username">
-
-    <label>Password</label>
-    <input type="password" id="adminPassword" placeholder="Enter admin password">
-
-    <div class="modal-actions">
-      <button id="adminLoginSubmit" class="btn btn--primary">Login</button>
-      <button id="adminModalClose" class="btn btn--outline">Cancel</button>
-    </div>
-    </div>
+        <div class="modal-content">
+            <h2>Admin Login</h2>
+            <label>Username</label>
+            <input type="text" id="adminUsername" placeholder="Enter admin username">
+            <label>Password</label>
+            <input type="password" id="adminPassword" placeholder="Enter admin password">
+            <div class="modal-actions">
+              <button id="adminLoginSubmit" class="btn btn--primary">Login</button>
+              <button id="adminModalClose" class="btn btn--outline">Cancel</button>
+            </div>
+        </div>
     </div>
 
+    <!-- Load Questions FIRST -->
+    <script src="questions.js"></script>
+    <!-- App Logic -->
     <script src="app.js"></script>
 </body>
 </html>

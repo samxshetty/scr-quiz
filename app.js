@@ -1,606 +1,618 @@
-class COIQuizApp {
+class SCRQuizApp {
     constructor() {
         this.questions = [
-            {
-id: 1,
-question: "The power to form new states or change the boundaries of existing states rests with",
-options: ["the Parliament", "the President", "the Election Commission", "none of these"],
-correct: 0
-},
-{
-id: 2,
-question: "The states were reorganized on linguistic basis in",
-options: ["1956", "1966", "1951", "1947"],
-correct: 0
-},
-{
-id: 3,
-question: "Which state enjoys the distinction of being the first linguistic state of India?",
-options: ["Andhra Pradesh", "West Bengal", "Tamil Nadu", "Punjab"],
-correct: 0
-},
-{
-id: 4,
-question: "The structure of administration in various union territories",
-options: ["is determined by the Parliament", "has been prescribed in the Constitution", "is determined by the Union Home Minister", "is determined by the President"],
-correct: 0
-},
-{
-id: 5,
-question: "The administrators of Union Territories are designated as",
-options: ["Lieutenant Governor", "Chief Commissioners", "Administrators", "all these"],
-correct: 0
-},
-{
-id: 6,
-question: "What is the maximum percentage of jobs that can be reserved by a state for backward class people in government jobs?",
-options: ["50%", "75%", "22.50%", "27%"],
-correct: 0
-},
-{
-id: 7,
-question: "The President can dismiss a member of the Council of Ministers",
-options: ["on the recommendation of the Prime Minister", "at his discretion", "with the consent of the Speaker", "none of these"],
-correct: 0
-},
-{
-id: 8,
-question: "The President of India is bound to follow the advice given by the",
-options: ["Union Council of Ministers", "Prime Minister of India", "Chief Justice of India", "Attorney General of India"],
-correct: 0
-},
-{
-id: 9,
-question: "The ministers hold office during the pleasure of the President which in fact means during the pleasure of",
-options: ["the Prime Minister", "the Parliament", "the Lok Sabha", "none of these"],
-correct: 0
-},
-{
-id: 10,
-question: "A member of Parliament or a state legislature can be elected as President but",
-options: ["he has to resign his seat before contesting the election", "he has to relinquish his seat as soon as he is elected", "he has to relinquish his seat within six months", "a state MLA cannot contest"],
-correct: 0
-},
-{
-id: 11,
-question: "The Presidential address is prepared by",
-options: ["the Prime Minister and his Cabinet", "the Special Secretary of the President", "the Minister for Parliamentary Affairs", "a Cabinet Minister of the President's choice"],
-correct: 0
-},
-{
-id: 12,
-question: "To which of the following bills must the President accord his sanction without reconsideration?",
-options: ["Money Bills", "Ordinary Bills", "Bills seeking amendment to the Constitution", "Bills passed by both Houses"],
-correct: 0
-},
-{
-id: 13,
-question: "If a bill is returned by the President and re-passed by the Parliament, he",
-options: ["has to sign it", "can send again", "can send to Supreme Court", "can reject it"],
-correct: 0
-},
-{
-id: 14,
-question: "The defeat of government in Rajya Sabha leads to",
-options: ["None of these", "dismissal", "PM resignation", "re-elections"],
-correct: 0
-},
-{
-id: 15,
-question: "The minimum age to be appointed Prime Minister of India is",
-options: ["25 years", "21 years", "30 years", "35 years"],
-correct: 0
-},
-{
-id: 16,
-question: "If the Prime Minister resigns or dies",
-options: ["the Council of Ministers stands dissolved", "senior most becomes PM", "Lok Sabha dissolves", "President chooses CM"],
-correct: 0
-},
-{
-id: 17,
-question: "Who can dissolve the Lok Sabha before its full term?",
-options: ["the President on recommendation of PM", "the Prime Minister", "the Speaker", "the President directly"],
-correct: 0
-},
-{
-id: 18,
-question: "The President can call a joint session of Parliament",
-options: ["under all these conditions", "if one House rejects bill", "if amendment is rejected", "if no action for six months"],
-correct: 0
-},
-{
-id: 19,
-question: "Who presides over joint sessions of Parliament?",
-options: ["the Speaker", "the Vice-President", "the President", "rotation system"],
-correct: 0
-},
-{
-id: 20,
-question: "The Speaker uses casting vote",
-options: ["in case of a tie", "to save government", "during emergencies", "constitutional amendments"],
-correct: 0
-},
-{
-id: 21,
-question: "Lok Sabha passes vote on account to",
-options: ["meet the expenditure during the period between the introduction of Budget and its passage", "to meet expenditure on secret services", "to enable the government to spend on unexpected demands", "assert its supremacy over finances"],
-correct: 0
-},
-{
-id: 22,
-question: "The maximum gap between the two sessions of Parliament",
-options: ["six months", "three months", "four months", "nine months"],
-correct: 0
-},
-{
-id: 23,
-question: "Who convenes the joint sessions of the Lok Sabha and Rajya Sabha?",
-options: ["the President", "the Speaker", "the Chairman of the Rajya Sabha", "the Minister for Parliamentary Affairs"],
-correct: 0
-},
-{
-id: 24,
-question: "A Money Bill passed by the Lok Sabha can be delayed by the Rajya Sabha for a maximum period of",
-options: ["14 days", "one month", "two months", "three months"],
-correct: 0
-},
-{
-id: 25,
-question: "What happens if a Money Bill passed by the Lok Sabha is partially amended by the Rajya Sabha?",
-options: ["the Lok Sabha can proceed with the Bill without the amendments proposed by the Rajya Sabha", "a joint sitting is called", "the bill lapses", "the Lok Sabha must return it to Rajya Sabha"],
-correct: 0
-},
-{
-id: 26,
-question: "A Money Bill can originate",
-options: ["only in the Lok Sabha", "in either house of Parliament", "only in the Rajya Sabha", "only in a joint sitting of both houses"],
-correct: 0
-},
-{
-id: 27,
-question: "Which one of the following sets of Bills is presented to the Parliament along with the Budget?",
-options: ["Finance Bill and Appropriation Bill", "Contingency Bill and Appropriation Bill", "Finance Bill and Contingency Bill", "Direct Taxes and Indirect Taxes Bill"],
-correct: 0
-},
-{
-id: 28,
-question: "The Council of Ministers has to resign if a vote of no-confidence is passed against it",
-options: ["by the Lok Sabha", "by the Rajya Sabha", "by both Houses jointly", "by two-thirds majority of both Houses"],
-correct: 0
-},
-{
-id: 29,
-question: "Who decides whether a bill is a Money Bill or not?",
-options: ["Speaker of Lok Sabha", "Prime Minister", "President", "Finance Minister"],
-correct: 0
-},
-{
-id: 30,
-question: "The Parliament of India cannot be considered a sovereign body because",
-options: ["laws passed can be declared unconstitutional by Supreme Court", "its authority is confined by Constitution", "Fundamental Rights restrict it", "all these"],
-correct: 0
-},
-{
-id: 31,
-question: "In case of tie during voting at a joint sitting of Parliament",
-options: ["the Speaker can cast a vote", "the bill is re-voted", "Rajya Sabha Chairman decides", "the bill is abandoned"],
-correct: 0
-},
-{
-id: 32,
-question: "The Prime Minister is the link between",
-options: ["the President and the Council of Ministers", "the President and Parliament", "Legislature and Executive", "all these"],
-correct: 0
-},
-{
-id: 33,
-question: "The size of the Council of Ministers at the Centre is decided by the strength of the",
-options: ["Lok Sabha", "Parliament", "Rajya Sabha", "no restriction"],
-correct: 0
-},
-{
-id: 34,
-question: "The size of the Ministry in a state is decided by the",
-options: ["Members of Legislative Assembly", "Chief Minister", "Governor", "None of these"],
-correct: 0
-},
-{
-id: 35,
-question: "The seat of a member is declared vacant if he is",
-options: ["absent for 60 days without permission", "involved in anti-party activity", "convicted with death sentence", "none of these"],
-correct: 0
-},
-{
-id: 36,
-question: "Which is a constitutional convention followed in India?",
-options: ["PM resigns if he loses majority", "Finance Minister must be from Lok Sabha", "All states represented in Cabinet", "Speaker acts as President in absence of both President & VP"],
-correct: 0
-},
-{
-id: 37,
-question: "If the Prime Minister is from Rajya Sabha",
-options: ["he cannot vote in no-confidence motion", "cannot speak in Lok Sabha", "can only speak in Rajya Sabha", "must become member of Lok Sabha within six months"],
-correct: 0
-},
-{
-id: 38,
-question: "The duration of Zero Hour in Lok Sabha is",
-options: ["One hour", "30 minutes", "15 minutes", "none of these"],
-correct: 0
-},
-{
-id: 39,
-question: "According to the Preamble, our Constitution envisages",
-options: ["All of these", "Economic justice", "Social justice", "Political justice"],
-correct: 0
-},
-{
-id: 40,
-question: "The Union Budget is presented to Parliament normally on",
-options: ["the last day of February", "the last day of March", "15th March", "1st April"],
-correct: 0
-},
-{
-id: 41,
-question: "The maximum permissible interval between two sessions of Parliament as prescribed in our Constitution is",
-options: ["06 months", "03 months", "One year", "09 months"],
-correct: 0
-},
-{
-id: 42,
-question: "The Constitution of India does not mention the post of",
-options: ["Deputy Prime Minister of India", "Deputy Speaker of Lok Sabha", "Deputy Chairperson of Rajya Sabha", "All these"],
-correct: 0
-},
-{
-id: 43,
-question: "India is a Republic because",
-options: ["the head of the State is elected for a fixed tenure", "it is a member of commonwealth", "it has an elected parliament", "it has a written Constitution"],
-correct: 0
-},
-{
-id: 44,
-question: "Indian Constitution provides for a",
-options: ["Bicameral system", "Presidential System", "Unicameral system", "Unitary System"],
-correct: 0
-},
-{
-id: 45,
-question: "An interpretation of the Indian Constitution is based on the spirit of the",
-options: ["Preamble", "Directive Principles of State Policy", "Fundamental Rights", "Fundamental Duties"],
-correct: 0
-},
-{
-id: 46,
-question: "The size of the Council of Ministers is decided by",
-options: ["Strength of Lok Sabha", "Parliament", "Election Commission", "President of India"],
-correct: 0
-},
-{
-id: 47,
-question: "The words ‘socialist secular’ and ‘and integrity’ were added to the Preamble by the ______ Amendment",
-options: ["42nd", "44th", "25th", "None of these"],
-correct: 0
-},
-{
-id: 48,
-question: "India aims to establish itself as a",
-options: ["Welfare State", "Secular State", "Sovereign State", "Developed State"],
-correct: 0
-},
-{
-id: 49,
-question: "Who described the Prime Minister of India as ‘Primus Inter Pares’ (first among equals)?",
-options: ["Lord Morley", "Sir William Vernon", "Harold Laski", "K. M. Munshi"],
-correct: 0
-},
-{
-id: 50,
-question: "The President decides on disqualification of Members of Parliament in consultation with the",
-options: ["Election Commission", "Prime Minister", "Speaker", "Chief Justice of India"],
-correct: 0
-},
-{
-id: 51,
-question: "Which article provides that there shall be a Prime Minister of India?",
-options: ["Art. 74", "Art. 52", "Art. 124", "Art. 153"],
-correct: 0
-},
-{
-id: 52,
-question: "Who announces the Government policies on the floor of the House?",
-options: ["Prime Minister", "Speaker of Lok Sabha", "President", "Finance Minister"],
-correct: 0
-},
-{
-id: 53,
-question: "Who presides over the meetings of the Union Council of Ministers?",
-options: ["Prime Minister", "President", "Speaker of Lok Sabha", "Vice President"],
-correct: 0
-},
-{
-id: 54,
-question: "Council of Ministers shall hold the office during the pleasure of",
-options: ["President", "Members of the House", "Speaker", "Prime Minister"],
-correct: 0
-},
-{
-id: 55,
-question: "Budget in Indian Constitution is classified into",
-options: ["Two types", "Three types", "Four types", "No such classification"],
-correct: 0
-},
-{
-id: 56,
-question: "Who is referred to as one of the officers of Parliament?",
-options: ["Deputy Speaker", "Prime Minister", "Council of Ministers", "None of these"],
-correct: 0
-},
-{
-id: 57,
-question: "Joint session is called in case of deadlock between the two Houses with regard to",
-options: ["Both Ordinary and Financial Bill", "Money Bill", "Financial Bill", "Ordinary Bill"],
-correct: 0
-},
-{
-id: 58,
-question: "According to the 91st Constitutional Amendment (2003), the total strength of Council of Ministers should not exceed ______ of Lok Sabha strength.",
-options: ["15%", "10%", "25%", "22.50%"],
-correct: 0
-},
-{
-id: 59,
-question: "The President of India can nominate to the Rajya Sabha",
-options: ["12 members", "20 members", "8 members", "None"],
-correct: 0
-},
-{
-id: 60,
-question: "The number of Ministers in the Central Government is fixed by the",
-options: ["Prime Minister", "President", "Parliament", "Speaker"],
-correct: 0
-},
-{
-id: 61,
-question: "The salaries and allowances of the members of the Council of Ministers",
-options: ["are determined by the Parliament from time to time", "are fixed in the Constitution", "are determined by the President with PM's advice", "are fixed by the Speaker"],
-correct: 0
-},
-{
-id: 62,
-question: "The power to control the expenditure of the Government of India rests exclusively with",
-options: ["the Comptroller and Auditor General", "the Parliament", "the President", "the Union Finance Minister"],
-correct: 0
-},
-{
-id: 63,
-question: "Who appoints the Chief Minister of a State?",
-options: ["Governor of that State", "Prime Minister of India", "President of India", "Chief Justice of High Court"],
-correct: 0
-},
-{
-id: 64,
-question: "The Chief Minister, who is the head of the government in a state, is",
-options: ["appointed by the Governor", "elected directly by the people", "appointed by the President", "appointed by Governor on advice of High Court"],
-correct: 0
-},
-{
-id: 65,
-question: "Who is regarded as the head of the State Council of Ministers?",
-options: ["the Chief Minister", "the Governor", "the Speaker", "None of these"],
-correct: 0
-},
-{
-id: 66,
-question: "A member of the council of ministers can hold office without being a member of the state legislature for a maximum period of",
-options: ["six months", "three months", "one year", "two years"],
-correct: 0
-},
-{
-id: 67,
-question: "Who among the following enjoys the distinction of being the first woman Dalit Chief Minister of a state?",
-options: ["Mayawati", "Nandani Satpathy", "Padmaja Naidu", "Sarojini Naidu"],
-correct: 0
-},
-{
-id: 68,
-question: "Some Indian states have bicameral legislatures. Their two houses are called",
-options: ["Legislative Assembly and Legislative Council", "Sabha and Samiti", "Lok Sabha and Legislative Council", "Assembly and Senate"],
-correct: 0
-},
-{
-id: 69,
-question: "Members of the Legislative Assembly are",
-options: ["elected by the people", "elected by local bodies", "nominated by Governor", "all of these"],
-correct: 0
-},
-{
-id: 70,
-question: "The chairman of the Legislative Council is",
-options: ["elected by its members", "appointed by the Governor", "ex-officio", "appointed by Speaker"],
-correct: 0
-},
-{
-id: 71,
-question: "States enjoy exclusive jurisdiction over subjects in the",
-options: ["State List", "Concurrent List", "Both A and B", "None"],
-correct: 0
-},
-{
-id: 72,
-question: "The central government can assign any function to the state with the consent of",
-options: ["the state government", "the President", "the Parliament", "the Chief Justice of India"],
-correct: 0
-},
-{
-id: 73,
-question: "Which type of global citizen emphasizes international law and human rights?",
-options: ["Legal", "Economic", "Social", "Local"],
-correct: 0
-},
-{
-id: 74,
-question: "A digital global citizen mainly uses",
-options: ["social networks to promote and discuss global issues", "national databases", "paper-based records", "government portals"],
-correct: 0
-},
-{
-id: 75,
-question: "Which type of global citizenship deals with cross-cultural understanding?",
-options: ["Cultural", "Political", "Environmental", "Economic"],
-correct: 0
-},
-{
-id: 76,
-question: "Which best defines globalization?",
-options: ["Enhanced global integration", "Cultural divergence", "Regional isolation", "Closed economies"],
-correct: 0
-},
-{
-id: 77,
-question: "Globalization leads to",
-options: ["Mutual global interdependence", "Increased domination", "Cultural stagnation", "Trade barriers"],
-correct: 0
-},
-{
-id: 78,
-question: "Interconnectedness promotes",
-options: ["Shared solutions to global problems", "neo-colonial dependence", "regional wars", "cultural conflicts"],
-correct: 0
-},
-{
-id: 79,
-question: "Which trait is essential to be a global citizen?",
-options: ["Tolerance", "Ethnocentrism", "Isolationism", "All of these"],
-correct: 0
-},
-{
-id: 80,
-question: "A Global Citizen is expected to",
-options: ["Act locally; think globally", "Ignore global events", "Focus only on personal gain", "Avoid community involvement"],
-correct: 0
-},
-{
-id: 81,
-question: "Who is called the ‘Father of Panchayat Raj System’ in India?",
-options: ["Balwant Rai Mehta", "L M Singhvi", "G V K Rao", "Ashok Mehta"],
-correct: 0
-},
-{
-id: 82,
-question: "Which is the primary and permanent body of the Panchayat Raj system?",
-options: ["Gram Sabha", "Standing Committee", "Khap Panchayat", "None of these"],
-correct: 0
-},
-{
-id: 83,
-question: "Panchayat Raj is a",
-options: ["Three tier system", "Single tier system", "Four tier system", "Two tier system"],
-correct: 0
-},
-{
-id: 84,
-question: "Global Citizenship primarily emphasizes",
-options: ["Global interconnectedness", "National pride", "Religious priorities", "Family ties"],
-correct: 0
-},
-{
-id: 85,
-question: "Which one is not a type of global citizenship?",
-options: ["Exclusive global citizenship", "Corporate global citizenship", "Ethical global citizenship", "Active global citizenship"],
-correct: 0
-},
-{
-id: 86,
-question: "A person who actively participates in global causes can be called a",
-options: ["Active global citizen", "Digital global citizen", "Nominal global citizen", "Passive global citizen"],
-correct: 0
-},
-{
-id: 87,
-question: "Which type of global citizen emphasizes international law and human rights?",
-options: ["Legal", "Economic", "Social", "Local"],
-correct: 0
-},
-{
-id: 88,
-question: "A digital global citizen mainly uses",
-options: ["social networks to promote and deliberate on global issues", "national databases", "paper-based records", "government portals"],
-correct: 0
-},
-{
-id: 89,
-question: "Which type of global citizenship deals with cross-cultural understanding?",
-options: ["Cultural", "Political", "Environmental", "Economic"],
-correct: 0
-},
-{
-id: 90,
-question: "Which best defines globalization?",
-options: ["Enhanced global integration", "Cultural divergence", "Regional isolation", "Closed economies"],
-correct: 0
-},
-{
-id: 91,
-question: "Globalization leads to",
-options: ["Mutual global interdependence", "Dominance", "Cultural stagnation", "Trade barriers"],
-correct: 0
-},
-{
-id: 92,
-question: "Interconnectedness promotes",
-options: ["Shared solutions to global problems", "Dependence between nations", "Regional wars", "Conflict"],
-correct: 0
-},
-{
-id: 93,
-question: "Which trait is essential to be a global citizen?",
-options: ["Tolerance", "Ethnocentrism", "Isolationism", "All of these"],
-correct: 0
-},
-{
-id: 94,
-question: "A global citizen must",
-options: ["Respect others’ rights", "Ignore global crisis", "Promote discrimination", "Act against social justice"],
-correct: 0
-},
-{
-id: 95,
-question: "Which is not a responsibility of global citizens?",
-options: ["Ignoring refugee crisis", "Respecting diversity", "Environmental stewardship", "Engaging in global challenges"],
-correct: 0
-},
-{
-id: 96,
-question: "Ethics in global citizenship refers to",
-options: ["Moral principles guiding global conduct", "Legal rules", "Personal profit", "Religious teachings"],
-correct: 0
-},
-{
-id: 97,
-question: "The 3Rs of sustainability include",
-options: ["Reduce, Reuse, Recycle", "Reduce, Rebuild, Replant", "Reduce, Reuse, Reform", "Reduce, Recycle, Reward"],
-correct: 0
-},
-{
-id: 98,
-question: "Supporting international aid efforts reflects",
-options: ["Global solidarity", "Nationalism", "Economic expansion", "Mercantilism"],
-correct: 0
-},
-{
-id: 99,
-question: "Sharing knowledge across cultures is an example of",
-options: ["Global Cooperation", "National responsibility", "Cultural dominance", "Colonialism"],
-correct: 0
-},
-{
-id: 100,
-question: "Choosing eco-friendly transportation supports",
-options: ["Sustainability", "Cultural heritage", "Political reforms", "Global inequality"],
-correct: 0
-},
+             {
+    id: 1,
+    question: "Which of the following are the objectives of the Beti Bachao Beti Paddao scheme? 1. Prevent female infanticide 2. Prevent child marriages 3. Ensure protection of a girl child 4. Ensure education of a girl child",
+    options: ["1,3,4", "2,3,4", "3 and 4", "All"],
+    correct: 0
+  },
+  {
+    id: 2,
+    question: "Which festival was organized on the theme of Beti Bachao Beti Padhao?",
+    options: ["Kala Mahotsava", "Mala Utsav", "Jana Utsav", "Kala Utsav"],
+    correct: 3
+  },
+  {
+    id: 3,
+    question: "Which of the following is a nodal ministry for Beti Bachao Beti Padhao scheme?",
+    options: ["Ministry of Home Affairs", "Ministry of Health and Family Welfare", "Ministry of Women and Child Development", "Niti Ayog"],
+    correct: 2
+  },
+  {
+    id: 4,
+    question: "Who gave the slogan 'Beti Bachao Beti Padhao'?",
+    options: ["Women and Child Development Minister Smriti Irani", "Prime Minister Sri Narendra Modi", "Home Minister Amit Saha", "None of these"],
+    correct: 1
+  },
+  {
+    id: 5,
+    question: "When did 'Beti Bachao Beti Padhao abhiyan' started?",
+    options: ["22 January 2016", "22 January 2015", "22 January 2018", "22 January 2022"],
+    correct: 1
+  },
+  {
+    id: 6,
+    question: "Which is the National Girl Child Day?",
+    options: ["12 January", "24 January", "14 January", "10 January"],
+    correct: 1
+  },
+  {
+    id: 7,
+    question: "'Beti Bachao Beti Padhao' launched in",
+    options: ["Rajastan", "Haryana", "Punjab", "Karnataka"],
+    correct: 1
+  },
+  {
+    id: 8,
+    question: "Who designed the logo of 'Beti Bachao Beti Padhao' abhiyan?",
+    options: ["Sri Narendra Modi", "Dr Manmohan Singh", "Shri A J Raghuvendra", "None of these"],
+    correct: 2
+  },
+  {
+    id: 9,
+    question: "Customary Village Councils (CVCs) are",
+    options: ["State sponsored organizations for local administration", "Privately managed administrative bodies with government financial support", "Traditional, non-state and unofficial local bodies participating in rural administration", "None of these"],
+    correct: 2
+  },
+  {
+    id: 10,
+    question: "'Khap Panchayat' is an example of ..............",
+    options: ["Traditional and non-official local institution participating in village administration", "Government sponsored traditional private establishments of village administration", "A form of government approved judicial institutions functioning in Indian village administration", "None of these"],
+    correct: 0
+  },
+  {
+    id: 11,
+    question: "One of the following started promoting Self Help Groups (SHGs) since 1992 with primary focus on empowerment of women and marginalized sections of the society.",
+    options: ["Reserve Bank of India (RBI)", "Regional Rural Banks", "National Bank for Agriculture and Rural Development (NABARD)", "Village Cooperative Societies"],
+    correct: 2
+  },
+  {
+    id: 12,
+    question: "Which of the following problems faced by the Self Help Groups (SHGs)?",
+    options: ["Inadequate financial assistance", "Poor financial management", "Lack of stability and unity", "All of these"],
+    correct: 3
+  },
+  {
+    id: 13,
+    question: "Which of the following committee connected with matters relating to Panchayat Raj system?",
+    options: ["Balwant Rai Mehta Committe", "Ashok Mehta Committee", "G V K Rao Committee", "All of these"],
+    correct: 3
+  },
+  {
+    id: 14,
+    question: "Which of the following Constitutional Amendment Act provides for the establishment of Panchayats and Grama Sabha as the foundation of Panchayat Raj System?",
+    options: ["73rd Constitutional Amendment Act, 1990", "74th Constitutional Amendment Act, 1992", "73rd Constitutional Amendment Act, 1992", "74th Constitutional Amendment Act, 1994"],
+    correct: 2
+  },
+  {
+    id: 15,
+    question: "Panchayat Raj is a",
+    options: ["Three – tier system", "Two – tier system", "Single layer system", "None of these"],
+    correct: 0
+  },
+  {
+    id: 16,
+    question: "Not less than .............. of the total number of seats to be reserved for women, further not less than ..................... of the total number of offices for chairperson at all levels of the panchayat to be reserved for women.",
+    options: ["One-third ; One-third", "One –third and two-third", "Two-third: One-third", "One-third; one-fourth"],
+    correct: 0
+  },
+  {
+    id: 17,
+    question: "Which of the Articles of Indian Constitution makes provisions for disqualifications from the panchayats membership?",
+    options: ["Article 243B", "Article 243F", "Article 243J", "Article 243K"],
+    correct: 1
+  },
+  {
+    id: 18,
+    question: "Minimum age prescribed to contest in Panchayat elections is ............",
+    options: ["25 years", "30 years", "21 years", "18 years"],
+    correct: 2
+  },
+  {
+    id: 19,
+    question: "Article ................enshrines the provisions with respect to elections of the Panchayats.",
+    options: ["Article 243O", "Article 243F", "Article 243J", "Article 243K"],
+    correct: 3
+  },
+  {
+    id: 20,
+    question: "Article ................ bars the courts to interfere in the Panchayat Matters.",
+    options: ["Article 243O", "Article 243F", "Article 243J", "Article 243K"],
+    correct: 0
+  },
+  {
+    id: 21,
+    question: "PESA Act means ...............",
+    options: ["Panchayat Extension and Stipulated Activities Act.", "Panchayats Extension to Scheduled Area Act.", "People Empowerment and Skill Augmentation Act", "None of these"],
+    correct: 1
+  },
+  {
+    id: 22,
+    question: "Who is recognized as 'Father of Rural Development' in India?",
+    options: ["S K Dey", "Rabindranath Tagore", "Raja Ram Mohan Roy", "Sardar Vallabha Bai Patel"],
+    correct: 0
+  },
+  {
+    id: 23,
+    question: "What is the Swachh Bharat Cess (SBC) rate shall be levied and collected in accordance with the provisions of Chapter VI of the Finance Act, 2015?",
+    options: ["1.5% of the value of taxable service", "0.75% of the value of taxable service", "0.5% of the value of taxable service", "0.25% of the value of taxable service"],
+    correct: 2
+  },
+  {
+    id: 24,
+    question: "Which one of the following committees is not connected with Panchayat Raj system?",
+    options: ["Drafting Committee", "Balwant Rai Mehta Committee", "Ashok Mehta Committee", "GVK Rao Committee"],
+    correct: 0
+  },
+  {
+    id: 25,
+    question: "Balwant Rai Mehta Committee for Panchayat Raj was appointed in the year ...................",
+    options: ["1968", "1947", "1950", "1957"],
+    correct: 3
+  },
+  {
+    id: 26,
+    question: "Who is called as the 'Father of Panchayat Raj System' in India?",
+    options: ["L M Singhvi", "Ahsok Mehta", "Balwant Rai Mehta", "G V K Rao"],
+    correct: 2
+  },
+  {
+    id: 27,
+    question: "Which is the primary and permanent body of Panchayat Raj system?",
+    options: ["Standing Committee", "Gram Sabha", "Khap Panchayat", "None of these"],
+    correct: 1
+  },
+  {
+    id: 28,
+    question: "Who holds a record book of details like the map of the land, the crops that are grown there, the owner's name, etc.",
+    options: ["District Collector", "Patwari (Land Measurer)", "Panchayat President", "None of these"],
+    correct: 1
+  },
+  {
+    id: 29,
+    question: "Sarva Shiksha Abhiyan (SSA) is a comprehensive and integrated flagship programme of Government of India to attain .................",
+    options: ["Quality Higher Education", "Proficiency in Technical Education", "Skill and Expertise in Medical Education", "Universal Elementary Education (UEE)"],
+    correct: 3
+  },
+  {
+    id: 30,
+    question: "Right to Education Act (RTE) came into force on ...........................",
+    options: ["1 April 2010", "22 April 2010", "11 April 2010", "1 April 2018"],
+    correct: 0
+  },
+  {
+    id: 31,
+    question: "'Padhe Bharat Badhe Bharat' is a nation-wide sub-programme of ................",
+    options: ["Holistic Education", "New Education Policy (NEP)", "National Education Policy (NEP)", "Sarva Siksha Abhiyan"],
+    correct: 3
+  },
+  {
+    id: 32,
+    question: "The NIPUN Bharat Mission was launched as part of ........................",
+    options: ["Sarva Shiksha Abhiyan in 2021", "Samagra Shiksha Abhiyan in 2021", "National Education Policy (NEP) in 2021", "None of these"],
+    correct: 1
+  },
+  {
+    id: 33,
+    question: "A government of India initiative launched by the then Prime Minister Dr. Manmohan Singh to create a literate society through a variety of teaching–learning programmes for the non-literate and neo-literate of 15 years and above is called as ....................",
+    options: ["Samagra Shiksha Abhiyan", "Sarva Shiksha Abhiyan", "Madhyamika Shiksha Abhiyan", "Saakshar Bharat"],
+    correct: 3
+  },
+  {
+    id: 34,
+    question: "Who was made as the brand ambassador of 'Beti Bachao Beti Padhao' initiative ..........",
+    options: ["Olympian Sakshi Mallik", "Olympian Nirav Chopra", "Olympian Vijendra Kuman", "Olympian Abhinav Bindra"],
+    correct: 0
+  },
+  {
+    id: 35,
+    question: "Who started 'Selfie With Daughter' initiative?",
+    options: ["Narendra Modi", "Dr Manmohan Singh", "Sunil Jaglan", "Smt. Smriti Irani"],
+    correct: 2
+  },
+  {
+    id: 36,
+    question: "Indian healthcare has evolved over the past three decades and is currently at a very critical juncture to achieve the 3As of healthcare; where 3As mean:",
+    options: ["Affordability, Accountability, Accuracy", "Accessibility, Availability, Accountability", "Affordability, Accessibility and Availability", "Accessibility, Authenticity, Accountability"],
+    correct: 2
+  },
+  {
+    id: 37,
+    question: "'Ayushman Bharat' initiative aiming at achieving Universal Health Coverage was launched in the year .......................",
+    options: ["2021", "2015", "2018", "2022"],
+    correct: 2
+  },
+  {
+    id: 38,
+    question: "National Health Protection Mission will have a defined benefit cover of ............... per family per year",
+    options: ["Rs. 3 lakhs", "Rs. 10 lakhs", "Rs. 5 lakhs", "Rs. 1.5 lakhs"],
+    correct: 2
+  },
+  {
+    id: 39,
+    question: "India's largest National Health Protection Scheme has been implemented under the name .............",
+    options: ["Samman Bharat", "Ayushman Bharat", "Adarsh Bharat", "Nirmaan Bharat"],
+    correct: 1
+  },
+  {
+    id: 40,
+    question: "Who will head the Ayushman Bharat National Health Protection Mission Council (AB-NHPMC) formed at national level to implement the scheme?",
+    options: ["Prime Minister", "Minister of Health and Family Welfare", "Minister of Ayush", "Chairman of NITI Ayog"],
+    correct: 1
+  },
+  {
+    id: 41,
+    question: "The states and UTs are required to set up SHA for the implementation of the scheme. What does SHA stands for?",
+    options: ["State Health Agency", "Society Health Agency", "Strategic Health Agency", "Social Health Agency"],
+    correct: 0
+  },
+  {
+    id: 42,
+    question: "The Ayushman Bharat aims to target about .................... beneficiaries under the scheme?",
+    options: ["100 crore", "10.74 crore", "10.47 crore", "10.65 crore"],
+    correct: 1
+  },
+  {
+    id: 43,
+    question: "The government has partnered with which entity to make the process cashless?",
+    options: ["Paytm", "Reliance", "NITI Ayog", "None of these"],
+    correct: 2
+  },
+  {
+    id: 44,
+    question: "Under the Ayushman Bharat programme, government has announced two major initiatives namely National Health Protection Scheme and Health and Wellness Centre as the two flagship programme with the aim to build New India by ..........................",
+    options: ["2022", "2021", "2030", "2047"],
+    correct: 0
+  },
+  {
+    id: 45,
+    question: "With reference to 'Ayushman Bharat' initiative, which of the following statement is correct? 1. Under the Ayushman Bharat programme, government has announced two major initiatives namely National Health Protection Scheme and Health and Wellness Centre as the two flagship programme with the aim to build New India 2. The expenses incurred in this scheme are shared between the Centre and the States in 60:40 ratio.",
+    options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    correct: 2
+  },
+  {
+    id: 46,
+    question: "Which of the following is linked with 'Ayushman Bharat' yojana?",
+    options: ["ABHA", "ASHA", "USHA", "None of these"],
+    correct: 0
+  },
+  {
+    id: 47,
+    question: "ABHA stands for ........... in Ayushman Bharat.",
+    options: ["All Body Health Assessment", "Ayushman Bharat Health Account", "Ayushman Bharat Health Assessment", "Agreement of Body and Health Assessment"],
+    correct: 1
+  },
+  {
+    id: 48,
+    question: "Who is eligible for ABHA ID card?",
+    options: ["All Indian Citizens", "Citizens with annual income below Rs. 5 lakhs", "Citizens with BPL Card facility", "SC, ST and EWS of the society"],
+    correct: 0
+  },
+  {
+    id: 49,
+    question: "NDHM means .............",
+    options: ["National Direct Health Medication", "Natinal Digital Health Monitoring", "National Doctors and Health Mentors", "National Digital Health Mission"],
+    correct: 3
+  },
+  {
+    id: 50,
+    question: "With reference to Ayushman Bharat Pradhan Mantri Jana Arogya Yojana (AB-PMJAY) consider the following statements: 1. It has been launched to achieve Universal Health Coverage 2. It is the world's largest health insurance scheme fully financed by the government and the cost of implementation is shared between the Centre and the State at 60:40 ratio 3. It is applicable to the people aged 60 and above only",
+    options: ["1 only", "1 and 2 only", "1 and 3 only", "2 and 3 only"],
+    correct: 1
+  },
+  {
+    id: 51,
+    question: "When the 'Swachh Bharat Abhiyan' initiated?",
+    options: ["2016", "2015", "2018", "2014"],
+    correct: 3
+  },
+  {
+    id: 52,
+    question: "'Swachh Bharat Mission' (Clean India Campaign) aims at: 1. Eliminate open defecation 2. Solid Waste Management",
+    options: ["1 only", "2 only", "Neither 1 nor 2", "Both 1 and 2"],
+    correct: 3
+  },
+  {
+    id: 53,
+    question: "'Swachh Bharat Abhiyan' is a restructured version of ...............",
+    options: ["'Nirmal Bharat Abhiyan', 2009", "Clean India Campaign, 2009", "Clean City Campaign, 2009", "None of these"],
+    correct: 0
+  },
+  {
+    id: 54,
+    question: "Mahatma Gandhi's 150 birth anniversary celebrated on ...................",
+    options: ["2 October 2019", "2 October 2020", "2 October 2021", "2 October 2018"],
+    correct: 0
+  },
+  {
+    id: 55,
+    question: "The 'Swachh Bharat Abhiyan' tagline 'Ek Kadam Swachhata Ki Aur' is given by ..........",
+    options: ["Shri Anant Khasbardar of Kolhapur, Maharashtra", "Sri Narendra Modi", "M S Swaminathan", "Ms. Bhagyasri Sheth of Rajkot, Gujarat"],
+    correct: 3
+  },
+  {
+    id: 56,
+    question: "Who among the following has designed the logo of 'Swachh Bharat Abhiyan'?",
+    options: ["Shri Anant Khasbardar of Kolhapur, Maharashtra", "Sri Narendra Modi", "M S Swaminathan", "Ms. Bhagyasri Sheth of Rajkot, Gujarat"],
+    correct: 0
+  },
+  {
+    id: 57,
+    question: "What is the budget amount fixed for Swachh Bharat Missin – Urban 2.0 will be effective from 2021 to 2026.",
+    options: ["100 crores", "10.4 thousand crores", "75.1 thousand crores", "1.41 lakh crores"],
+    correct: 3
+  },
+  {
+    id: 58,
+    question: "Which one of the following as a civil servant who led the 'Swachh Bharat Mission'?",
+    options: ["Hari Chandana Dasari", "Parameswaran Iyer", "Renu Raj", "Kunwar Bai Yadav"],
+    correct: 1
+  },
+  {
+    id: 59,
+    question: "At a rally in Champaran the Prime Minister called the campaign 'satyagraha se swachhagrah' in reference Gandhi Champaran Satyagrah launched on .............",
+    options: ["13 April 1919", "10 April 1916", "12 March 1931", "None of these"],
+    correct: 1
+  },
+  {
+    id: 60,
+    question: "In which place 'Clean India Mission' (Swachh Bharat Abhiyan) was officially launched?",
+    options: ["Patna, Bihar", "Rajghat, New Delhi", "Lucknow, UP", "Kurukshethra, Haryana"],
+    correct: 1
+  },
+  {
+    id: 61,
+    question: "How many sub missions are there in 'Swachh Bharat Abhiyan'?",
+    options: ["Two", "Four", "Six", "Three"],
+    correct: 0
+  },
+  {
+    id: 62,
+    question: "When was the Nirmal Bharat Abhiyan launched?",
+    options: ["2013", "2009", "2020", "2012"],
+    correct: 1
+  },
+  {
+    id: 63,
+    question: "Which of the following is/are objectives of 'Swachh Bharat Abhiyan'?",
+    options: ["To eliminate open defecation", "Eradication of manual scavenging", "Effective solid waste management", "All of these"],
+    correct: 3
+  },
+  {
+    id: 64,
+    question: "Which is the twitter hashtag used for 'Swachh Bharat Mission'?",
+    options: ["#MyIncredible India", "#MyCleanIndia", "#MyNeatIndia", "#MYSmartIndia"],
+    correct: 1
+  },
+  {
+    id: 65,
+    question: "On which day India observe the World Toilet Day?",
+    options: ["14 August", "19 November", "13 February", "15 September"],
+    correct: 1
+  },
+  {
+    id: 66,
+    question: "Which is the first city in our country free of manual scavenging?",
+    options: ["Alwar", "Bharuch", "Trichy", "Jaipur"],
+    correct: 1
+  },
+  {
+    id: 67,
+    question: "Which is the cleanest village of India?",
+    options: ["Mawlynnong", "Punsari", "Dharani", "Ballia"],
+    correct: 0
+  },
+  {
+    id: 68,
+    question: "What is the tagline of Swachh Bharat Abhiyan?",
+    options: ["One India, Clean India", "Swachh Bharat Mera Bharat", "Ek Kadam Swachhata Ki Ore", "None of these"],
+    correct: 2
+  },
+  {
+    id: 69,
+    question: "Which of the following committee recommended for Panchayat Raj system in India?",
+    options: ["Drafting Committee", "Balwant Rai Mehta Committee", "Ashok Mehta Committee", "None of these"],
+    correct: 1
+  },
+  {
+    id: 70,
+    question: "Which of the following system is established on the basis of the direct election?",
+    options: ["Panchayat Raj", "Block Committee", "Zilla Parishad", "All of these"],
+    correct: 0
+  },
+  {
+    id: 71,
+    question: "Which of the following Article of Indian Constitution is related to Panchayati Raj?",
+    options: ["Article 324", "Article 326", "Article 194", "Article 243"],
+    correct: 3
+  },
+  {
+    id: 72,
+    question: "What was the main purpose behind bringing the Panchayati Raj system to India?",
+    options: ["Decentralization of the political power to the common public in villages", "Prevent the criminalization of politics", "Development of villages", "To reduce election expenses"],
+    correct: 0
+  },
+  {
+    id: 73,
+    question: "Which schedule was added to the constitution by the 73rd Constitutional Amendment?",
+    options: ["8 Schedule", "11 Schedule", "12 Schedule", "10 Schedule"],
+    correct: 1
+  },
+  {
+    id: 74,
+    question: "Which statement is not correct regarding 'Gram Sabha'?",
+    options: ["It is a body consisting of persons registered in the electoral rolls of a village comprised within the area of the Panchayat level", "It is a village assembly consisting of all the registered voters in the area of the Panchayat", "Its power is determined by the central government", "Its powers and functions at the village level are like state legislature at the state level"],
+    correct: 2
+  },
+  {
+    id: 75,
+    question: "Which statement is true about Panchayati Raj? 1. Its powers have been determined by the State Legislature 2. Minimum age should be 21 years to contest the election at the panchayat level 3. Election of the Panchayati Raj institutions is conducted under the guidance of the State Election Commission 4. It is a three-tier system with panchayats at the lower level, panchayats samiti at intermediaty or mandal level and Zilla Parishad at district level",
+    options: ["1 only", "2 and 4 only", "1 and 3 only", "All of these are true"],
+    correct: 3
+  },
+  {
+    id: 76,
+    question: "How many posts are reserved for women at all levels in the Panchayati Raj system?",
+    options: ["One–third", "One-fourth", "Two-third", "There is no reservation for women in Pachayat Raj system."],
+    correct: 0
+  },
+  {
+    id: 77,
+    question: "'Swachha Bharat Swachha Vidyalaya' (SBSV) campaign with the objective of cleanliness in schools run by the Ministry of .....................",
+    options: ["Environment and Forest", "Human Resource Development", "Agriculture", "Urban Development"],
+    correct: 1
+  },
+  {
+    id: 78,
+    question: "What is the primary goal and focus of Swachha Bharat Mission?",
+    options: ["Clean India", "Digital India", "Smart India", "Skill India"],
+    correct: 0
+  },
+  {
+    id: 79,
+    question: "When did the 'Skill India' or 'National Skills Development Mission of India' was launched?",
+    options: ["15 July 2018", "15 August 2016", "15 July 2015", "None of these"],
+    correct: 2
+  },
+  {
+    id: 80,
+    question: "Which of the following country entered into a partnership in Skill India programme?",
+    options: ["Bhutan", "Russia", "USA", "UK"],
+    correct: 3
+  },
+  {
+    id: 81,
+    question: "SANKALP means .......................",
+    options: ["Skill Awareness and Knowledge Awareness for Loan Processing Programme", "Skill Acquisition and Knowledge Awareness for Livelihood Promotion Programme", "Social Acquisition and Knowledge Acquisisition for Livelihood Promotion Programme", "None of these"],
+    correct: 1
+  },
+  {
+    id: 82,
+    question: "Skill India programmes are managed by .....................",
+    options: ["National Skills Development Corporation of India (NSDC)", "Urban Development Corporation of India", "Labour Unions", "None of these"],
+    correct: 0
+  },
+  {
+    id: 83,
+    question: "Skill India Mission is associated with the Ministry of ..................",
+    options: ["Labour and Family Welfare", "Human Resource Development", "Skill Development and Entrepreneurship", "NITI Ayog"],
+    correct: 2
+  },
+  {
+    id: 84,
+    question: "Which of the following is an initiative of Skill India Mission?",
+    options: ["Food for Life Programme", "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)", "Right to Education", "Grammen Sadak Yojana"],
+    correct: 1
+  },
+  {
+    id: 85,
+    question: "Consider the following statements about NRLM: 1. It promotes the Self-employment and Organization of the rural poor 2. It is supported by the World Bank with a credit of $ 1 Billion",
+    options: ["1 only", "2 only", "Both 1 and 2", "None of these"],
+    correct: 2
+  },
+  {
+    id: 86,
+    question: "NRLM – Ajeevaka is launched by the Ministry of ....................",
+    options: ["Labour and Family Welfare", "Rural Development", "Urban Development", "Human Resource Development"],
+    correct: 1
+  },
+  {
+    id: 87,
+    question: "This is a platform for sharing of experiences of SHGs and extends mutual support to improve the overall performance.",
+    options: ["Cluster Level Forum", "Community Level Forum", "Common Leave Facility", "None of these"],
+    correct: 0
+  },
+  {
+    id: 88,
+    question: "NRLM follows ...................",
+    options: ["Supply Based Production Strategy", "Demand Driven Strategy", "Income Driven Strategy", "None of these"],
+    correct: 1
+  },
+  {
+    id: 89,
+    question: "The World Bank (IBRD) in its World Development Report (2014) termed it as a 'stellar example of rural development' Which one of the following initiative of the Central Government is termed as a 'stellar example of rural development' by the World Bank in its World Development Report, 2014?",
+    options: ["NRLM", "Rural Livelihood Mission", "NREGA, 2005", "None of these"],
+    correct: 2
+  },
+  {
+    id: 90,
+    question: "NREGA aims to enhance livelihood security in rural areas by providing at least ............ days of wage employment in a financial year to at least one member of every household whose adult members volunteer to do unskilled manual work.",
+    options: ["180", "200", "150", "100"],
+    correct: 3
+  },
+  {
+    id: 91,
+    question: "Under MNREGA scheme, who is mainly responsible as key functionary in implementing the schemes/works at village level?",
+    options: ["Village Secretary", "Gram Rozgar Sahayak", "Gramin Vikas Adhikari", "None of these"],
+    correct: 1
+  },
+  {
+    id: 92,
+    question: "Which is the first state to employ the differently-abled, in MNREGA?",
+    options: ["Keral", "Tamilnadu", "Gujarat", "Karnataka"],
+    correct: 1
+  },
+  {
+    id: 93,
+    question: "For how many years the registration of job card under MNREGA is valid?",
+    options: ["Five", "Four", "Ten", "For life time"],
+    correct: 0
+  },
+  {
+    id: 94,
+    question: "Who selects the Social Audit Committee under MNREGA?",
+    options: ["Members of Zilla Panchayat", "District Collector", "Grama Sabha", "Minister for Rural Devlopment"],
+    correct: 2
+  },
+  {
+    id: 95,
+    question: "Union Government increased workdays from 100 days to 150 days per year under MGNREGA in which state?",
+    options: ["Karnataka", "Tamil Nadu", "Kerala", "Bihar"],
+    correct: 1
+  },
+  {
+    id: 96,
+    question: "In the cash benefits transferred last year under the Direct Benefits Transfer Scheme, the largest head under which DBT transfers were made was ..............................",
+    options: ["MNREGA", "LPG Subsidy", "Fertilizer Subsidy", "Compensation to farmers for the loss due to flood, drought, and other calamities, etc."],
+    correct: 0
+  },
+  {
+    id: 97,
+    question: "Which of the following is/are true regarding Pradhan Mantri Awaas Yojana — Gramin? 1. Cost of unit assistance to be shared between Central and State Governments in the ratio 75:25 in plain areas. 2. The beneficiary will be entitled to 90 days of unskilled labour from MGNREGA",
+    options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+    correct: 1
+  },
+  {
+    id: 98,
+    question: "The NDA Government has decided to increase the number of workdays under MGNREGA from 100 days to ....................... days in drought-affected areas.",
+    options: ["120", "200", "150", "280"],
+    correct: 2
+  },
+  {
+    id: 99,
+    question: "National Mission for a Green India is merged with ...................................",
+    options: ["National River Conservation Scheme", "Swachh Bharat Abhiyan", "National Afforestation Programme", "MNREGA"],
+    correct: 3
+  },
+  {
+    id: 100,
+    question: "Consider the following statements: 1. MGNREGS fulfills the constitutional rights in India 2. MGNREGA is to be implemented mainly by gram panchayats 3. The places where the recent unseasonal rain and hailstorms have affected crops the government will increase the number of work days under the Mahatma Gandhi National Rural Employment Guarantee Scheme from 100 to 200 days per year Which of these above statements are correct?",
+    options: ["1 only", "1 and 3 only", "2 and 3 only", "1 and 2 only"],
+    correct: 3
+  },
+  {
+    id: 101,
+    question: "Which of the following can help in the development of human resource?",
+    options: ["Skill development", "Improving literacy and access to information", "Training", "All of these"],
+    correct: 3
+  },
+  {
+    id: 102,
+    question: "Rural development aims at 1. Improving rural health facilities 2. Reducing poverty 3. Development of rural infrastructure",
+    options: ["1 only", "2 only", "1 and 3 only", "1, 2, and 3"],
+    correct: 3
+  },
 ];
 
         this.currentQuestions = [];
@@ -1182,5 +1194,5 @@ correct: 0
 
 // Initialize the application when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    new COIQuizApp();
+    new SCRQuizApp();
 });
