@@ -5,7 +5,7 @@ class SCRQuizApp {
     id: 1,
     question: "Which of the following are the objectives of the Beti Bachao Beti Paddao scheme? 1. Prevent female infanticide 2. Prevent child marriages 3. Ensure protection of a girl child 4. Ensure education of a girl child",
     options: ["1,3,4", "2,3,4", "3 and 4", "All"],
-    correct: 0
+    correct: 3
   },
   {
     id: 2,
